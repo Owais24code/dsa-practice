@@ -21,7 +21,7 @@ void employeeDetails::EmployeeSalary(){
     }
     netSalary= (basicSalary +DA +HRA+TA)-incomeTax;
 
-    cout << "Net Salary = "<< netSalary;
+    cout << "Net Salary = "<< netSalary <<endl;
 }
 
 int main(){
