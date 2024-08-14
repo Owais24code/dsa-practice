@@ -274,7 +274,25 @@ void deletion_beginning()
 }
 
 void deletion_last() 
-{	cout << "\nNode deleted\n";
+{	
+    if(head == nullptr){
+        cout << "underflow";
+    }
+    else if(head->next == nullptr){
+        delete head;
+        head= nullptr;
+        cout<<"node deleted";
+    }
+    else{
+        Node* ptr = head;
+        while(ptr->next != nullptr){
+            ptr=ptr->next;
+        }
+        ptr->prev->next= nullptr;
+        delete ptr;
+        cout << " node deleted";
+
+    }
 }
 
 void deletion_specified() 
