@@ -2,20 +2,19 @@
 using namespace std;
 
 class mobile{
-    private:
         string brand , color;
         int price , width, height;
     public:
-        mobile(string brand , string color , int p, int w, int h){
+        mobile(string brand , string color , int price, int width, int height){
             this->brand=brand;
             this->color=color;
-            price = p;
-            width =w;
-            height = h;
+            this->price = price;
+            this->width =width;
+            this->height = height;
         }
         void displayMobile();
 };
-void mobile ::displayMobile(){
+void mobile :: displayMobile(){
     cout <<" Brand :" <<brand <<endl;
     cout <<" price :" <<price <<endl;
     cout <<" color :" <<color <<endl;
@@ -24,8 +23,6 @@ void mobile ::displayMobile(){
 }
 
 int main(){
-    string brand , color;
-    int price , width, height;
-    cin >> brand >> price >> color >> width >> height;
-    mobile m1();
+    mobile m1("apple","red",888,5,7);
+    m1.displayMobile();
 }

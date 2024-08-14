@@ -14,7 +14,7 @@ void employeeDetails::EmployeeSalary(){
     cin >> empCode >> basicSalary ;
     cout << "empId : "<<empCode <<endl;
     cout << "Basic Salary :" << basicSalary << endl;
-    DA = basicSalary * 174 /100;
+    DA = basicSalary * 17 /100;
     HRA =basicSalary* 10/100;
     if (basicSalary > 50000){
         incomeTax = basicSalary*5/100;

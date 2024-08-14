@@ -37,8 +37,9 @@ int main(){
     int accountNo ,balance;
     cin >> accountNo >> balance;
     atm t1(accountNo,balance);
-    int choice;
-    cin >> choice;
+    while(1){
+        int choice;
+        cin >> choice;
         switch(choice){
         case 1 :
             t1.deposit();
@@ -53,4 +54,5 @@ int main(){
             cout << "Exit";
             break;
          }
+    }
 }
